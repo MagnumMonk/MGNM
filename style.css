@@ -202,12 +202,20 @@ a {
   background-color: rgba(0, 172, 212, 0.8);
 }
 
+ h2 { line-height: 4.75rem;}
+
 #botext {
   padding: 10px;
   color: white;
 }
 
+#footer {
+  padding-top: 80px;
+  padding-bottom: 30px;
+}
+
 #footer p {
+  margin: 0;
   color: white;
   text-align: center;
   font-size: .65rem;
