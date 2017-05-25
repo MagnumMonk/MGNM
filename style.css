@@ -4,10 +4,20 @@
   border: 0px solid;
   margin: 0px;
   padding: 0;
+
 }
 
+
 body {
-background-color: #00ac99;
+  position: relative;
+  height: 100%;
+  background-color: #00ac99;
+  margin: auto;
+}
+
+body, html, .banner, {
+  height: auto;
+  min-height: 100%;
 }
 
 h1 {
@@ -76,7 +86,7 @@ p {
   text-align: center;
   z-index: 1000;
   position: fixed;
-  box-shadow: 4px 0 12px -4px rgba(0, 0, 0, 0.5);
+  box-shadow: 4px 0 8px -5px rgba(0, 0, 0, 0.5);
 
 }
 
@@ -94,34 +104,24 @@ a {
 }
 
 .banner {
-  background: url("http://lookw.ru/1/573/1402260835-oboi-1920h1080.-zaoblachnaya-dal-16.jpg") bottom no-repeat;
+  /*background: url("http://lookw.ru/1/573/1402260835-oboi-1920h1080.-zaoblachnaya-dal-16.jpg") bottom no-repeat;*/
+  background: url("images/kayak.gif") center no-repeat;
   background-size: cover;
   z-index: 0;
   position: relative;
   width: 100%;
-  height: 400px;
-
- .is_overlay { display: block; width: 100%; height: 100%; }
-  #trailer {
-	position: absolute;
-	top: 0; right: 0; bottom: 0; left: 0;
-	overflow: hidden;
-}
-
-#trailer > video {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-
+  height: 500px;
 
 }
+
 
 #info {
-  display: inline-block;
-}
+  border: 0 solid;
+  display: block;
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+  }
 
 #left-block {
   color: white;
@@ -132,6 +132,7 @@ a {
 }
 
 #right-block {
+  padding-top: 50px;
   color: white;
   float: right;
   width: 50%;
@@ -140,17 +141,32 @@ a {
   text-align: center;
 }
 
+.block-image {
+
+  margin: auto;
+  position: relative;
+  display: block;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  background: url("http://lookw.ru/1/573/1402260835-oboi-1920h1080.-zaoblachnaya-dal-16.jpg") bottom no-repeat;
+  background-size: cover;
+  margin-top: 20%;
+  transition: 0.1s;
+}
+
 
 .bubble {
   background-color: rgba(0, 0, 0, 0.1);
   border: 0px solid white;
-  border-radius: 10px;
+  border-radius: 1rem;
   display: inline-table;
   margin: 10px;
   padding: 7px;
   position: relative;
   text-align: center;
   width: 95%;
+  transition: 0.1s;
 }
 
 .circle-image {
@@ -162,3 +178,48 @@ a {
   margin: 10px;
   background: url("http://cinepremiere.impresionesaerea.netdna-cdn.com/noticias/2016/05-mayo/SadBenaffleck.jpg") center no-repeat;
   background-size: cover;
+}
+
+#bottom-block {
+  display: inline-block;
+  position: relative;
+  padding:0 10px;
+  bottom: 0px;
+  width: 100%;
+  height: 500px;
+  background: url("images/botbg.png") no-repeat bottom;
+  background-size: cover;
+}
+
+.bottom {
+  position: relative;
+  top: 3rem;
+  bottom: 3rem;
+  margin: auto;
+  text-align: center;
+  border-radius: 1rem;
+  width: 50%;
+  background-color: rgba(0, 172, 212, 0.8);
+}
+
+#botext {
+  padding: 10px;
+  color: white;
+}
+
+#footer p {
+  color: white;
+  text-align: center;
+  font-size: .65rem;
+}
+
+.hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  transition: 0.1s;
+  color: black;
+}
+
+.hoverimg {
+  transform: scale(1.2, 1.2);
+  transition: 0.2s;
+}
