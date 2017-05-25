@@ -1,6 +1,6 @@
-$('.squote').hide();
-$('.quotes').hover(
-   function(){
-    $(this).toggleClass('hover');
-    $('.squote', this).slideToggle(300);
-});
+$(document).ready(function(){
+    $("li").hide();
+    $('.drop-panel').hover(function() {
+        $('li').slideToggle(300);
+    });
+  });
