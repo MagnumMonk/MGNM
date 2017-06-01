@@ -64,6 +64,7 @@ p {
   background-size: cover;
   background-color: rgba(255, 255, 255, 0.3);
   height: 8rem;
+  z-index: 100;
 }
 
 
@@ -72,6 +73,7 @@ p {
   text-align: center;
   top:30%;
   width: 100%;
+  z-index: 100;
 }
 
 .flag {
@@ -105,14 +107,27 @@ a {
   color: #fff;
 }
 
+#prlx {
+
+  overflow: hidden;
+  background: url("images/botbg2.jpg") no-repeat;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 500px;
+  z-index: -1;
+
+}
+
 .banner {
-  /*background: url("http://lookw.ru/1/573/1402260835-oboi-1920h1080.-zaoblachnaya-dal-16.jpg") bottom no-repeat;*/
-  background: url("images/kayak.gif") center no-repeat;
-  background-size: cover;
+  overflow: hidden;
+  background: url("images/botbg2f.png") no-repeat;
+
   z-index: 0;
   position: relative;
   width: 100%;
   height: 500px;
+
 
 }
 
@@ -126,7 +141,7 @@ a {
   }
 
 #left-block {
-  color: white;
+  color: #fff;
   float: left;
   width: 50%;
   padding: 10px;
@@ -141,6 +156,7 @@ a {
   padding: 10px;
   display: block;
   text-align: center;
+  overflow: hidden;
 }
 
 .block-image {
@@ -148,13 +164,16 @@ a {
   margin: auto;
   position: relative;
   display: block;
-  height: 250px;
-  width: 250px;
+  height: 150px;
+  width: 150px;
   border-radius: 50%;
   background: url("http://lookw.ru/1/573/1402260835-oboi-1920h1080.-zaoblachnaya-dal-16.jpg") bottom no-repeat;
   background-size: cover;
-  margin-top: 20%;
+  margin-top: 15%;
+  margin-bottom: 40%;
   transition: 0.1s;
+  z-index: 1001;
+
 }
 
 
@@ -174,12 +193,13 @@ a {
 .circle-image {
   float: left;
   display: block;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   margin: 10px;
   background: url("http://cinepremiere.impresionesaerea.netdna-cdn.com/noticias/2016/05-mayo/SadBenaffleck.jpg") center no-repeat;
   background-size: cover;
+  overflow: auto;
 }
 
 #bottom-block {
@@ -228,6 +248,7 @@ a {
   transition: 0.1s;
   color: black;
   box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.2);
+
 }
 
 .hoverimg {
