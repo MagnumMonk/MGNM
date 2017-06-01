@@ -32,8 +32,8 @@ $(document).ready(function(){
 
   $(document).ready(function(){
       $('body').mousemove(function(e){
-         var x = -(e.pageX + this.offsetLeft) / 20;
-          var y = -(e.pageY + this.offsetTop) / 20;
+         var x = -(e.pageX + this.offsetLeft) / 30;
+          var y = -(e.pageY + this.offsetTop) / 30;
           $('.banner').css('background-position', x + 'px ' + y + 'px' );
           $('#prlx').css('background-position', x/2 + 'px ' + y/2 + 'px' );
       });
